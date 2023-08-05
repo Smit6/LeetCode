@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool canAttendMeetings(vector<vector<int>>& intervals) {
+        if (!intervals.size()) return true;
         sort(intervals.begin(), intervals.end());
         vector<int> prev = intervals[0];
         vector<int> cur;
