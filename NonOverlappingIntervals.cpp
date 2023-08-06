@@ -1,6 +1,8 @@
-class Solution {
+class Solution
+{
 public:
-    int eraseOverlapIntervals(vector<vector<int>>& intervals) {
+    int eraseOverlapIntervals(vector<vector<int>>& intervals)
+    {
         int non_overlapping = 0;
         sort(intervals.begin(), intervals.end());
         vector<int> prev = intervals[0];

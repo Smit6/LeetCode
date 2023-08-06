@@ -1,4 +1,5 @@
-class Solution {
+class Solution
+{
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists)
     {
@@ -8,7 +9,8 @@ public:
         ListNode* l1;
         ListNode* l2;
 
-        while (lists.size() > 1) {
+        while (lists.size() > 1)
+        {
             for (int i = 0; i < lists.size(); i += 2)
             {
                 l1 = lists[i];

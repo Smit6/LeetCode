@@ -1,6 +1,8 @@
-class Solution {
+class Solution
+{
 public:
-    bool canAttendMeetings(vector<vector<int>>& intervals) {
+    bool canAttendMeetings(vector<vector<int>>& intervals)
+    {
         if (!intervals.size()) return true;
         sort(intervals.begin(), intervals.end());
         vector<int> prev = intervals[0];

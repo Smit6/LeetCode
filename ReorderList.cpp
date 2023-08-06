@@ -1,6 +1,8 @@
-class Solution {
+class Solution
+{
 public:
-    void reorderList(ListNode* head) {
+    void reorderList(ListNode* head)
+    {
         // Reach halfway in the list
         ListNode* slow = head;
         ListNode* fast = head->next;

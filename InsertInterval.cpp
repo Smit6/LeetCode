@@ -1,10 +1,14 @@
-class Solution {
+class Solution
+{
 public:
-    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
+    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval)
+    {
         vector<vector<int>> res;
         int intervals_size = intervals.size();
-        for (int i = 0; i < intervals_size; i++) {
-            if (newInterval[1] < intervals[i][0]) {
+        for (int i = 0; i < intervals_size; i++)
+        {
+            if (newInterval[1] < intervals[i][0])
+            {
                 res.push_back(newInterval);
                 for (i; i < intervals_size; i++)
                     res.push_back(intervals[i]);

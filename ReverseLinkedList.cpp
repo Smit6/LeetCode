@@ -1,6 +1,8 @@
-class Solution {
+class Solution
+{
 public:
-    ListNode* reverseList(ListNode* head) {
+    ListNode* reverseList(ListNode* head)
+    {
         ListNode* prev = nullptr;
         ListNode* cur = head;
         ListNode* tmp = nullptr;

@@ -1,9 +1,11 @@
-class Solution {
+class Solution
+{
 private:
     set<int> visited;
     unordered_map<int, vector<int>> adj_list;
 
-    bool dfs(int v, int prev_v) {
+    bool dfs(int v, int prev_v)
+    {
         if (visited.find(v) != visited.end()) return false;
         visited.insert(v);
 
@@ -13,8 +15,10 @@ private:
         return true;
     }
 public:
-    bool validTree(int n, vector<vector<int>>& edges) {
-        for (auto& edge : edges) {
+    bool validTree(int n, vector<vector<int>>& edges)
+    {
+        for (auto& edge : edges)
+        {
             adj_list[edge[0]].push_back(edge[1]);
             adj_list[edge[1]].push_back(edge[0]);
         }

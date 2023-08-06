@@ -1,13 +1,16 @@
-class Solution {
+class Solution
+{
 public:
-    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+    vector<int> spiralOrder(vector<vector<int>>& matrix)
+    {
         int up = 0, left = 0;
         int down = matrix.size() - 1, right = matrix[0].size() - 1;
         unsigned int num_elements = (down + 1) * (right + 1);
 
         vector<int> result;
 
-        while (result.size() < num_elements) {
+        while (result.size() < num_elements)
+        {
             for (int c = left; c <= right; c++)
                 result.emplace_back(move(matrix[up][c]));
 
