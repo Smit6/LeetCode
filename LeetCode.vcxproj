@@ -129,19 +129,29 @@
   <ItemGroup>
     <ClCompile Include="AlienDictionary.cpp" />
     <ClCompile Include="GraphValidTree.cpp" />
+    <ClCompile Include="GroupAnagrams.cpp" />
     <ClCompile Include="InsertInterval.cpp" />
     <ClCompile Include="LinkedListCycle.cpp" />
+    <ClCompile Include="LongestRepeatingCharacterReplacement.cpp" />
+    <ClCompile Include="LongestSubstringWithoutRepeatingCharacters.cpp" />
     <ClCompile Include="MeetingRooms.cpp" />
     <ClCompile Include="MeetingRoomsII.cpp" />
     <ClCompile Include="MergeIntervals.cpp" />
     <ClCompile Include="MergekSortedLists.cpp" />
     <ClCompile Include="MergeTwoSortedLists.cpp" />
+    <ClCompile Include="MinimumWindowSubstring.cpp" />
     <ClCompile Include="NonOverlappingIntervals.cpp" />
     <ClCompile Include="NumberOfConnectedComponentsInAnUndirectedGraph.cpp" />
     <ClCompile Include="RemoveNthNodeFromEndOfList.cpp" />
     <ClCompile Include="ReorderList.cpp" />
     <ClCompile Include="ReverseLinkedList.cpp" />
+    <ClCompile Include="RotateImage.cpp" />
     <ClCompile Include="SetMatrixZeroes.cpp" />
+    <ClCompile Include="SpiralMatrix.cpp" />
+    <ClCompile Include="ValidAnagram.cpp" />
+    <ClCompile Include="ValidPalindrome.cpp" />
+    <ClCompile Include="ValidParentheses.cpp" />
+    <ClCompile Include="WordSearch.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
