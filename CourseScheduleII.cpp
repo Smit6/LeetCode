@@ -18,13 +18,28 @@ vector<int> Solution::findOrder(int numCourses, vector<vector<int>>& prerequisit
 
     for (int crs = 0; crs < numCourses; crs++)
         if (!dfs(crs))
-            return set<int>();
+            return vector<int>();
 
     return res;
 }
 
 bool Solution::dfs(int crs)
 {
-    
+    if (cycle.find(crs) != cycle.end())
+        return false;
+    if (visited.find(crs) != visited.end())
+        return true;
+
+    visited.insert(crs);
+    cycle.insert(crs);
+
+    for (auto& adj_crs : adj_list[crs])
+        if (!dfs(adj_crs))
+            return false;
+
+    cycle.erase(crs);
+
+    res.emplace_back(move(crs));
+    return true;
 }
 
