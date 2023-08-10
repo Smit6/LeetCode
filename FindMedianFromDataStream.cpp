@@ -8,6 +8,8 @@ public:
     {
         max_heap.push(num);
 
+        // Max heap: 1, 2, 4
+        // Min heap: 3, 5, 6
         if (!max_heap.empty() && !min_heap.empty() && max_heap.top() > min_heap.top())
         {
             min_heap.push(max_heap.top());

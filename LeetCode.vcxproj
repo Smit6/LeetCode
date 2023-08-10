@@ -130,15 +130,21 @@
     <ClCompile Include="AlienDictionary.cpp" />
     <ClCompile Include="BinaryTreeLevelOrderTraversal.cpp" />
     <ClCompile Include="BinaryTreeMaximumPathSum.cpp" />
+    <ClCompile Include="ConstructBinaryTreeFromPreorderAndInorderTraversal.cpp" />
+    <ClCompile Include="DesignAddAndSearchWordsDataStructure.cpp" />
     <ClCompile Include="EncodeAndDecodeStrings.cpp" />
+    <ClCompile Include="FindMedianFromDataStream.cpp" />
     <ClCompile Include="GraphValidTree.cpp" />
     <ClCompile Include="GroupAnagrams.cpp" />
+    <ClCompile Include="ImplementTriePrefixTree.cpp" />
     <ClCompile Include="InsertInterval.cpp" />
     <ClCompile Include="InvertBinaryTree.cpp" />
+    <ClCompile Include="KthSmallestElementInABST.cpp" />
     <ClCompile Include="LinkedListCycle.cpp" />
     <ClCompile Include="LongestPalindromicSubstring.cpp" />
     <ClCompile Include="LongestRepeatingCharacterReplacement.cpp" />
     <ClCompile Include="LongestSubstringWithoutRepeatingCharacters.cpp" />
+    <ClCompile Include="LowestCommonAncestorOfABinarySearchTree.cpp" />
     <ClCompile Include="MaximumDepthOfBinaryTree.cpp" />
     <ClCompile Include="MeetingRooms.cpp" />
     <ClCompile Include="MeetingRoomsII.cpp" />
@@ -158,10 +164,13 @@
     <ClCompile Include="SetMatrixZeroes.cpp" />
     <ClCompile Include="SpiralMatrix.cpp" />
     <ClCompile Include="SubtreeOfAnotherTree.cpp" />
+    <ClCompile Include="TopKFrequentElements.cpp" />
     <ClCompile Include="ValidAnagram.cpp" />
+    <ClCompile Include="ValidateBinarySearchTree.cpp" />
     <ClCompile Include="ValidPalindrome.cpp" />
     <ClCompile Include="ValidParentheses.cpp" />
     <ClCompile Include="WordSearch.cpp" />
+    <ClCompile Include="WordSearchII.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
