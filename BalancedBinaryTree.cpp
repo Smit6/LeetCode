@@ -1,3 +1,6 @@
+// Time: O(N) - Calculation for every subtree
+// Space : O(N) - Recursion stack may go up to O(N) in case of unbalanced tree
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {

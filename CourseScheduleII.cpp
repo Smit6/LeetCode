@@ -1,3 +1,6 @@
+// Time: O(N.3 ^ L) - L is the length of word and N is number of cells
+// Space : O(L)
+
 class Solution {
 public:
     vector<int> findOrder(int, vector<vector<int>>&);
