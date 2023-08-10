@@ -1,3 +1,7 @@
+// Time: O(T.N) where T refers to the sum of the nums array
+// The Cache of size O(T.N) has been filled just once.
+// Space : O(T.N)
+
 class Solution
 {
 public:
