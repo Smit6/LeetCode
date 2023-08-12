@@ -15,19 +15,23 @@
 class Solution
 {
 public:
-    bool isValidBST(TreeNode* root)
-    {
-        return dfs(root, nullptr, nullptr);
-    }
+    bool isValidBST(TreeNode*);
 private:
-    bool dfs(TreeNode* node, TreeNode* min_limit, TreeNode* max_limit)
-    {
-        if (!node)
-            return true;
-
-        if ((min_limit && node->val <= min_limit->val) || (max_limit && node->val >= max_limit->val))
-            return false;
-
-        return dfs(node->left, min_limit, node) && dfs(node->right, node, max_limit);
-    }
+    bool dfs(TreeNode*, TreeNode*, TreeNode*);
 };
+
+bool Solution::isValidBST(TreeNode* root)
+{
+    return dfs(root, nullptr, nullptr);
+}
+
+bool Solution::dfs(TreeNode* node, TreeNode* min_limit, TreeNode* max_limit)
+{
+    if (!node)
+        return true;
+
+    if ((min_limit && node->val <= min_limit->val) || (max_limit && node->val >= max_limit->val))
+        return false;
+
+    return dfs(node->left, min_limit, node) && dfs(node->right, node, max_limit);
+}
