@@ -1,3 +1,6 @@
+// Time: O(M ^ 2.N) - M is the length of words and N is the number of words
+// Space : O(M ^ 2.N)
+
 class Solution {
 public:
     int ladderLength(string, string, vector<string>&);
