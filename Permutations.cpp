@@ -1,3 +1,6 @@
+// Time: O(N!)
+// Space : O(N) - Space for permutation
+
 class Solution {
 public:
     vector<vector<int>> permute(vector<int>&);
