@@ -128,9 +128,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AlienDictionary.cpp" />
+    <ClCompile Include="BalancedBinaryTree.cpp" />
+    <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="BinaryTreeLevelOrderTraversal.cpp" />
     <ClCompile Include="BinaryTreeMaximumPathSum.cpp" />
+    <ClCompile Include="ClimbingStairs.cpp" />
+    <ClCompile Include="CloneGraph.cpp" />
+    <ClCompile Include="CoinChangeII.cpp" />
     <ClCompile Include="ConstructBinaryTreeFromPreorderAndInorderTraversal.cpp" />
+    <ClCompile Include="ConvertSortedArrayToBinarySearchTree.cpp" />
+    <ClCompile Include="CourseSchedule.cpp" />
+    <ClCompile Include="CourseScheduleII.cpp" />
     <ClCompile Include="DesignAddAndSearchWordsDataStructure.cpp" />
     <ClCompile Include="EncodeAndDecodeStrings.cpp" />
     <ClCompile Include="FindMedianFromDataStream.cpp" />
@@ -150,11 +158,15 @@
     <ClCompile Include="MeetingRoomsII.cpp" />
     <ClCompile Include="MergeIntervals.cpp" />
     <ClCompile Include="MergekSortedLists.cpp" />
+    <ClCompile Include="MergeTwoBinaryTrees.cpp" />
     <ClCompile Include="MergeTwoSortedLists.cpp" />
+    <ClCompile Include="MinimumCostForTickets.cpp" />
     <ClCompile Include="MinimumWindowSubstring.cpp" />
     <ClCompile Include="NonOverlappingIntervals.cpp" />
     <ClCompile Include="NumberOfConnectedComponentsInAnUndirectedGraph.cpp" />
+    <ClCompile Include="NumberOfIslands.cpp" />
     <ClCompile Include="PalindromicSubstrings.cpp" />
+    <ClCompile Include="Permutations.cpp" />
     <ClCompile Include="RemoveNthNodeFromEndOfList.cpp" />
     <ClCompile Include="ReorderList.cpp" />
     <ClCompile Include="ReverseLinkedList.cpp" />
@@ -162,13 +174,17 @@
     <ClCompile Include="SameTree.cpp" />
     <ClCompile Include="SerializeAndDeserializeBinaryTree.cpp" />
     <ClCompile Include="SetMatrixZeroes.cpp" />
+    <ClCompile Include="SimplifyPath.cpp" />
     <ClCompile Include="SpiralMatrix.cpp" />
+    <ClCompile Include="SplitArrayLargestSum.cpp" />
     <ClCompile Include="SubtreeOfAnotherTree.cpp" />
+    <ClCompile Include="TargetSum.cpp" />
     <ClCompile Include="TopKFrequentElements.cpp" />
     <ClCompile Include="ValidAnagram.cpp" />
     <ClCompile Include="ValidateBinarySearchTree.cpp" />
     <ClCompile Include="ValidPalindrome.cpp" />
     <ClCompile Include="ValidParentheses.cpp" />
+    <ClCompile Include="WordLadder.cpp" />
     <ClCompile Include="WordSearch.cpp" />
     <ClCompile Include="WordSearchII.cpp" />
   </ItemGroup>
