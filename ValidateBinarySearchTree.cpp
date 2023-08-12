@@ -1,3 +1,6 @@
+// Time: O(N)
+// Space : O(N)
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -24,7 +27,7 @@ private:
 
         if ((min_limit && node->val <= min_limit->val) || (max_limit && node->val >= max_limit->val))
             return false;
-        
+
         return dfs(node->left, min_limit, node) && dfs(node->right, node, max_limit);
     }
 };
