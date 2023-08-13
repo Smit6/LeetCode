@@ -1,3 +1,6 @@
+// Time: O(N)
+// Space: O(1)
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
