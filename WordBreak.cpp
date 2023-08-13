@@ -1,3 +1,6 @@
+// Time: O(N^3)
+// Space: O(N)
+
 class Solution {
 public:
     bool wordBreak(string, vector<string>&);
