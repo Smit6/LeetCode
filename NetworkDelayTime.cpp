@@ -1,3 +1,6 @@
+// Time: O(E.logV)
+// Space : O(V ^ 2)
+
 class Solution {
 public:
     int networkDelayTime(vector<vector<int>>&, int, int);
