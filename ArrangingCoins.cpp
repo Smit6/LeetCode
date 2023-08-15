@@ -9,7 +9,6 @@ public:
 int Solution::arrangeCoins(int n) {
     int left = 1;
     int right = n;
-    int res = 0;
     int mid = 0;
     int coins = 0;
 
