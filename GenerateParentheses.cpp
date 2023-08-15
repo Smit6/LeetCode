@@ -1,3 +1,5 @@
+// Time: O((4^N)/sqrt(N))
+// Space: O(N)
 
 class Solution {
 public:
