@@ -1,3 +1,6 @@
+// Time: O(N * (log K)), Where K is the number of linked lists, N is the number of nodes in two lists
+// Space: O(K)
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
