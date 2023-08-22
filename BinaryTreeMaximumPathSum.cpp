@@ -1,3 +1,6 @@
+// Time: O(N)
+// Space: O(N)
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -9,26 +12,26 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution
-{
+class Solution {
 public:
-    int maxPathSum(TreeNode* root)
-    {
-        if (!root) return 0;
-        max_sum = root->val;
-        dfs(root);
-        return max_sum;
-    }
+    int maxPathSum(TreeNode*);
 private:
-    int max_sum = 0;
-
-    int dfs(TreeNode* node)
-    {
-        if (!node)
-            return 0;
-        int left = max(dfs(node->left), 0);
-        int right = max(dfs(node->right), 0);
-        max_sum = max(max_sum, left + right + node->val);
-        return max(left, right) + node->val;
-    }
+    int max_sum = numeric_limits<int>::min();
+    int dfs(TreeNode*);
 };
+
+int Solution::dfs(TreeNode* root) {
+    if (!root)
+        return 0;
+    
+    int left = max(dfs(root->left), 0);
+    int right = max(dfs(root->right), 0);
+
+    max_sum = max(max_sum, left + right + root->val);
+    return max(left, right) + root->val;
+}
+
+int Solution::maxPathSum(TreeNode* root) {
+    dfs(root);
+    return max_sum;
+}
