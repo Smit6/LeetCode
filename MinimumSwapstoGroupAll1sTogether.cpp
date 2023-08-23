@@ -16,7 +16,7 @@ public:
 
         while (r < data.size()) {
             cur_ones += data[r];
-            if (r - l + 1 < ones)
+            if (r - l + 1 > ones)
                 cur_ones -= data[l++];
             max_ones = max(max_ones, cur_ones);
             r++;
