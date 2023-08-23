@@ -24,7 +24,7 @@ int Solution::kBigIndices(vector<int>& nums, int k) {
         pq_left.push(nums[i]);
         pq_left.pop();
 
-        right_big_i[i] = pq_right.top() < nums[n - i - 1];
+        right_big_i[n - i - 1] = pq_right.top() < nums[n - i - 1];
         pq_right.push(nums[n - i - 1]);
         pq_right.pop();
     }
