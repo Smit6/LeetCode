@@ -1,44 +1,40 @@
-class Solution
-{
+// Time: O(N), N is the sum of the lengths of s and t
+// Space: O(N)
+
+class Solution {
 public:
-    string minWindow(string s, string t)
-    {
-        if (t == "")
-            return "";
-
-        unordered_map<char, int> window_char;
-        unordered_map<char, int> t_char;
-        for (auto& c : t)
-            t_char[c]++;
-
-        int have = 0;
-        int need = t_char.size();
-
-        pair<int, int> min_window(-1, -1);
-        int min_length = INT_MAX;
-
-        int left = 0;
-        for (int right = 0; right < s.length(); right++)
-        {
-            window_char[s[right]]++;
-            if (window_char[s[right]] == t_char[s[right]])
-                have++;
-
-            while (have == need)
-            {
-                if (right - left + 1 < min_length)
-                {
-                    min_length = right - left + 1;
-                    min_window.first = left;
-                    min_window.second = right;
-                }
-                --window_char[s[left]];
-                if (window_char[s[left]] < t_char[s[left]])
-                    --have;
-                ++left;
-            }
-        }
-
-        return min_length == INT_MAX ? "" : s.substr(min_window.first, min_window.second - min_window.first + 1);
-    }
+    string minWindow(string, string);
 };
+
+string Solution::minWindow(string s, string t) {
+    unordered_map<char, int> window_count;
+    unordered_map<char, int> t_count;
+    for (auto& ch_t : t)
+        t_count[ch_t]++;
+    
+    int have{};
+    int need = t_count.size();
+
+    int min_len{numeric_limits<int>::max()};
+    pair<int, int> min_window;
+
+    int l{};
+    for (int r{0}; r < s.length(); r++) {
+        window_count[s[r]]++;
+        if (window_count[s[r]] == t_count[s[r]])
+            ++have;
+        
+        while (have == need) {
+            if (r - l + 1 < min_len) {
+                min_len = r - l + 1;
+                min_window = make_pair(l, r);
+            }
+            --window_count[s[l]];
+            if (window_count[s[l]] < t_count[s[l]])
+                --have;
+            ++l;
+        }
+    }
+
+    return min_len == numeric_limits<int>::max() ? "" : s.substr(min_window.first, min_len);
+}
