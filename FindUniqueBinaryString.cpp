@@ -27,11 +27,10 @@ string Solution::backtrack(vector<string>& nums, string s, int i) {
 
 
 string Solution::findDifferentBinaryString(vector<string>& nums) {
-    set_nums.insert(nums.begin(), nums.end());
     if (!nums.size())
         return "";
 
-    int len_num = nums[0].size();
+    set_nums.insert(nums.begin(), nums.end());
 
     return backtrack(nums, "", 0);
 }
